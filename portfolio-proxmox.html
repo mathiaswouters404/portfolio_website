@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Proxmox</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/proxmox/proxmox_server_1.png" alt="proxmox_server_1">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/proxmox/proxmox_server_2.png" alt="proxmox_server_2">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/proxmox/proxmox_dashboard.png" alt="proxmox_dashboard">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <p>I made this project because I wanted to experiment with a home server. It was very educational and interesting because it also showed me the many advantages of a home server. I also learned a lot about virtualization and hypervisors.</p>
+              <p><a href="https://youtu.be/K5Pa26CCZfE" target="_blank">YouTube video (for more information)</a></p>
+            </div>
+            <div class="portfolio-description">
+              <h2>Proxmox Home Server</h2>
+              <p>My server was an old computer with not the best specs, I'm talking about 4gb ram and an old AMD Phenom processor. That's why my server is no longer on today because the hardware is just too bad.</p>
+              <p>I started by completely cleaning my computer and installing proxmox. The server had 2 hard drives of 1 TB each and ran in a RAID 1 configuration, meaning one drive mirrored the other so I only had 1 TB in total storage but this makes the server much more secure should something go wrong.</p>
+              <p>Then I started by installing a vm with Plex, which is actually a streaming service such as Netflix or Disney +, but with Plex you decide what is in the library. I myself don't have many digital movies that I could upload to my Plex media server so I didn't get to use it much, but I think the concept is great.</p>
+              <p>Then I installed my own NAS distribution, namely OpenMediaVault. This used my raid 1 configuration so I shouldn't have set up a separate raid configuration for my NAS. A DIY NAS has many advantages, but also has a major disadvantage, which is that it does not offer remote access out of the box. And that is why I had to install my own VPN, namely OpenVPN.</p>
+              <p>Then I installed my own Minecraft server with MineOS and an Apache web server to run locally for a while. And finally, I installed PiHole, which is an ad-blocking application aimed at blocking ads at the network level. PiHole acts as a Domain Name Service (DNS) server and as such queries all domains that try to access the devices connected to the network and blocks all ad servings.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

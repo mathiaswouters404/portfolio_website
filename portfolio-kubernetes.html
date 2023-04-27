@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Portfolio - Kubernetes Cluster</title>
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
+  <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <link rel="shortcut icon" href="/assets/img/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-config" content="/assets/img/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main id="main">
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kubernetes/kubernetes_1.png" alt="kubernetes_1">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kubernetes/kubernetes_2.png" alt="kubernetes_2">
+                </div>
+
+                <div class="swiper-slide">
+                  <img src="assets/img/portfolio/kubernetes/kubernetes_3.png" alt="kubernetes_3">
+                </div>
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3>Project information</h3>
+              <p>For the Linux Webservices course I had to create a project in which I had to set up a Kubernetes cluster. In my cluster I had to deploy an NGINX, FastAPI and MongoDB stack, all done by microk8s.</p>
+              <p>For more information download this report: <a href="/assets/kubernetes_cluster_report.pdf" target="_blank">Kubernetes Cluster report</a></p>
+              <p></p>
+              <p>
+                <ul>
+                  Here are also 2 links to the GitHub repositories of the web server and the api:
+                  <li class="kubernetes-list"><a href="https://github.com/mathiaswouters/milestone2-github-webserver" target="_blank">Webserver GitHub repo</a></li>
+                  <li class="kubernetes-list"><a href="https://github.com/mathiaswouters/milestone2-github-api" target="_blank">API GitHub repo</a></li>
+                </ul>
+              </p>
+
+            </div>
+            <div class="portfolio-description">
+              <h2>Kubernetes Cluster</h2>
+              <p>I first had to write a docker file for my web server and api, which I then uploaded to the docker hub. Then I wrote my API, this was only a very small API because basically the only request I needed was a GET request to get my users. But then I also made a GET request that was called on the root of my website and it just printed a hello world message, I did this so that I could easily see if my API was running successfully. This API also interacted with my MongoDB database, for this I used the default docker file from MongoDB that is on the docker hub. Next I wrote my YAML configuration files for my 3 services.</p>
+              <p>I used Vagrant to set up my VMs because it is very easy and fast. I had also written a script that ran vagrant when creating a new vm. This script installed docker and microk8s. In total I used 2 VMs, the first VM was my master and worker node in one and the second VM was just a worker node. If everything was running correctly I had to fill in my database because I didn't use a persistent volume for this. And then if everything was successful then my name ended up on the web page.</p>
+              <p>As a load balancer I used MetalLB, which is included in your microk8s installation by default, so I only had to enable it. The same also applies to my monitoring software promoter. All I had to do was enable it and port forward it.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

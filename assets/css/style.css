@@ -231,13 +231,13 @@ h6 {
 .nav-menu .active span,
 .nav-menu .active:focus span,
 .nav-menu li:hover > a span {
-  color: #fff;
+  color: #0563bb;
 }
 
 .nav-menu a:hover,
 .nav-menu li:hover > a {
   width: 100%;
-  color: #fff;
+  color: #0563bb;
 }
 
 .nav-menu a:hover span,
@@ -704,14 +704,14 @@ section {
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 20px;
+  font-size: 35px;
   color: #45505b;
   font-weight: 600;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #45505b;
-  font-size: 14px;
+  font-size: 20px;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -819,6 +819,10 @@ section {
 
 .portfolio-details .portfolio-description p {
   padding: 0;
+}
+
+.kubernetes-list {
+  padding-left: 25px;
 }
 
 /*--------------------------------------------------------------
