@@ -66,7 +66,7 @@
           <div class="col-lg-4">
             <div class="portfolio-info">
               <h3>Project information</h3>
-              <p>For the Linux Webservices course I had to create a project in which I had to set up a Kubernetes cluster. In my cluster I had to deploy an NGINX, FastAPI and MongoDB stack, all done by microk8s.</p>
+              <p>For the Linux Webservices course I had to complete a project in which I had to set up a Kubernetes cluster. In that cluster I had to deploy an NGINX, FastAPI, and MongoDB stack, all done via microk8s.</p>
               <p>For more information download this report: <a href="/assets/kubernetes_cluster_report.pdf" target="_blank">Kubernetes Cluster report</a></p>
               <p></p>
               <p>
@@ -80,9 +80,9 @@
             </div>
             <div class="portfolio-description">
               <h2>Kubernetes Cluster</h2>
-              <p>I first had to write a docker file for my web server and api, which I then uploaded to the docker hub. Then I wrote my API, this was only a very small API because basically the only request I needed was a GET request to get my users. But then I also made a GET request that was called on the root of my website and it just printed a hello world message, I did this so that I could easily see if my API was running successfully. This API also interacted with my MongoDB database, for this I used the default docker file from MongoDB that is on the docker hub. Next I wrote my YAML configuration files for my 3 services.</p>
-              <p>I used Vagrant to set up my VMs because it is very easy and fast. I had also written a script that ran vagrant when creating a new vm. This script installed docker and microk8s. In total I used 2 VMs, the first VM was my master and worker node in one and the second VM was just a worker node. If everything was running correctly I had to fill in my database because I didn't use a persistent volume for this. And then if everything was successful then my name ended up on the web page.</p>
-              <p>As a load balancer I used MetalLB, which is included in your microk8s installation by default, so I only had to enable it. The same also applies to my monitoring software promoter. All I had to do was enable it and port forward it.</p>
+              <p>I first had to write a docker file for my web server and API, which I uploaded to the docker hub. Then I wrote my API, this was only a very small API because the only request I needed was a GET request to get my users. To easily verify if my API was running successfully I also made a GET request that was called on the root of my website just for printing a hello world message. By using the default docker file from MongoDB on the docker hub this API also interacted with my MongoDB database. Next I wrote my YAML configuration files for my 3 services.</p>
+              <p>I used Vagrant to set up my VMs because it is very easy and fast. I had also written a script that ran Vagrant when creating a new VM. This script installed docker and microk8s. In total I used 2 VMs, the first VM was my master and worker node in one, and the second VM was just a worker node. Since everything was running correctly, I had to fill in my database because I didn't use a persistent volume for this, after which my name ended up on the web page.</p>
+              <p>As a load balancer I used MetalLB, which is included in the microk8s installation by default, so I only had to enable it. The same also applies to my monitoring software promoter. All I had to do was enable it and port forward it.</p>
             </div>
           </div>
 
