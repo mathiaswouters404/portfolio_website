@@ -65,8 +65,11 @@
 
           <div class="col-lg-4">
             <div class="portfolio-info">
-              <h3>Project information</h3>
-              <p>For the Linux Webservices course I had to complete a project in which I had to set up a Kubernetes cluster. In that cluster I had to deploy an NGINX, FastAPI, and MongoDB stack, all done via microk8s.</p>
+              <h3>
+                <span class="project-info">Project information</span>
+                <i class="fa-solid fa-user"></i>
+              </h3>
+              <p>As part of the Linux Webservices course, I undertook a project focused on setting up a Kubernetes cluster. The objective was to deploy an NGINX, FastAPI, and MongoDB stack using microk8s.</p>
               <p>For more information download this report: <a href="/assets/kubernetes_cluster_report.pdf" target="_blank">Kubernetes Cluster report</a></p>
               <p></p>
               <p>
@@ -80,9 +83,16 @@
             </div>
             <div class="portfolio-description">
               <h2>Kubernetes Cluster</h2>
-              <p>I first had to write a docker file for my web server and API, which I uploaded to the docker hub. Then I wrote my API, this was only a very small API because the only request I needed was a GET request to get my users. To easily verify if my API was running successfully I also made a GET request that was called on the root of my website just for printing a hello world message. By using the default docker file from MongoDB on the docker hub this API also interacted with my MongoDB database. Next I wrote my YAML configuration files for my 3 services.</p>
-              <p>I used Vagrant to set up my VMs because it is very easy and fast. I had also written a script that ran Vagrant when creating a new VM. This script installed docker and microk8s. In total I used 2 VMs, the first VM was my master and worker node in one, and the second VM was just a worker node. Since everything was running correctly, I had to fill in my database because I didn't use a persistent volume for this, after which my name ended up on the web page.</p>
-              <p>As a load balancer I used MetalLB, which is included in the microk8s installation by default, so I only had to enable it. The same also applies to my monitoring software promoter. All I had to do was enable it and port forward it.</p>
+              <p>To begin, I created a Dockerfile for my web server and API, which I then uploaded to the Docker Hub. The API itself was relatively small, primarily consisting of a GET request to retrieve user information. Additionally, I implemented a simple GET request on the root of my website to display a "hello world" message, allowing for easy verification of the API's successful operation. Leveraging the default Dockerfile provided by MongoDB on the Docker Hub, my API seamlessly interacted with the MongoDB database. YAML configuration files were prepared for each of the three services involved.</p>
+              <p>For the setup of virtual machines (VMs), I utilized Vagrant due to its simplicity and speed. I had previously developed a script that Vagrant automatically ran when creating a new VM, taking care of the installation of Docker and microk8s. In total, I employed two VMs: the first served as both the master and worker node, while the second was exclusively designated as a worker node. With everything functioning correctly, I proceeded to populate the database manually since I did not utilize a persistent volume, resulting in the inclusion of my name on the web page.</p>
+              <p>To handle load balancing, I incorporated MetalLB, which comes pre-installed with microk8s. Enabling MetalLB was a straightforward process. The same simplicity applied to the setup of the monitoring software Prometheus, which required only the enabling of the feature and port forwarding.</p>
+              <p></p>
+              <p>The goal of my Kubernetes cluster project was to deploy an NGINX, FastAPI, and MongoDB stack using microk8s, as part of the Linux Webservices course. Through careful configuration and implementation, I successfully established a functional cluster environment.</p>
+              <p>During the project, I gained valuable experience in Docker containerization, YAML configuration, and VM setup using Vagrant. I learned how to create a Dockerfile for my web server and API, upload images to the Docker Hub, and seamlessly interact with a MongoDB database. Utilizing Vagrant simplified the setup of virtual machines, allowing for quick and efficient deployment of the cluster.</p>
+              <p>By incorporating MetalLB for load balancing and Prometheus for monitoring, I ensured the scalability and observability of my cluster. These additional components enhanced the overall functionality and performance of the system.</p>
+              <p>Through this project, I achieved my personal goal of gaining hands-on experience with Kubernetes and its related tools. I developed a deeper understanding of container orchestration and learned how to create a resilient and scalable infrastructure.</p>
+              <p>Moving forward, I intend to further optimize and expand my Kubernetes cluster, exploring additional features and services to enhance its capabilities. This project has equipped me with the knowledge and skills to tackle future challenges in deploying and managing containerized applications.</p>
+              <p>In conclusion, the Kubernetes cluster I built serves as a powerful platform for deploying and managing applications at scale. It offers seamless scalability, load balancing, and monitoring capabilities, making it an ideal choice for modern application development and deployment scenarios.</p>
             </div>
           </div>
 

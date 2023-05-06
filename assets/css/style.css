@@ -825,6 +825,10 @@ section {
   padding-left: 25px;
 }
 
+.project-info {
+  margin-right: 5px; /* Adjust the value as needed */
+}
+
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
